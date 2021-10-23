@@ -33,3 +33,18 @@ def test_is_even_multiple(a):
     result = is_even(a)
     print("return: ", result)
     assert result == True
+
+
+def test_check_float_input():
+    # テストケースとして2を入力
+    a = 0.2
+
+    # 関数に入力
+    result = is_even(a)
+
+    # 標準出力で一応チェックする
+    print("return: ", result)
+
+    # 2は偶数なのでTrueを返してほしい．
+    # pythonのassert文は判定文がFalseだとエラーを出す
+    assert result == False

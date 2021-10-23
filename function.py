@@ -4,7 +4,7 @@ def is_even(num: int) -> bool:
     :param num: 偶奇判定をしたい整数 int
     :return: 偶数かどうか bool
     '''
-
+    assert type(num) == int
     if num % 2 == 0:
         return True
     else:
