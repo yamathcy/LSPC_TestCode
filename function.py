@@ -6,6 +6,7 @@ def is_even(num: int) -> bool:
     """
     assert type(num) == int
     if num % 2 == 0:
-        return False
-    else:
         return True
+    else:
+        return False
+
