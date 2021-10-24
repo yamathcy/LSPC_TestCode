@@ -21,7 +21,7 @@ def test_is_even():
     # pythonのassert文は判定文がFalseだとエラーを出す
     assert result == True
 
-
+'''
 # 複数のテストケースを試したい場合，pytestをインポートして以下のデコレータをつける
 @pytest.mark.parametrize(
     "a", [0, 1, 2, 3]
@@ -46,4 +46,4 @@ def test_check_float_input():
     # 2は偶数なのでTrueを返してほしい．
     # pythonのassert文は判定文がFalseだとエラーを出す
     assert result == False
-
+'''
