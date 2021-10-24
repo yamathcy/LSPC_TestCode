@@ -5,6 +5,7 @@ def is_even(num: int) -> bool:
     :return: 偶数かどうか bool
     """
     assert type(num) == int
+
     if num % 2 == 0:
         return False
     else:
