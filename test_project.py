@@ -4,10 +4,10 @@ from function import is_even
 # pytestの場合はtest_*.pyという名前のファイルの関数がテストされる
 
 def test_is_even():
-    '''
+    """
     is_evenに対するテスト
     :return:
-    '''
+    """
     # テストケースとして2を入力
     a = 2
 
@@ -26,8 +26,6 @@ def test_is_even():
 @pytest.mark.parametrize(
     "a", [0, 1, 2, 3]
 )
-
-
 def test_is_even_multiple(a):
     # 上で作ったテストケースを実行する
     result = is_even(a)
@@ -48,3 +46,4 @@ def test_check_float_input():
     # 2は偶数なのでTrueを返してほしい．
     # pythonのassert文は判定文がFalseだとエラーを出す
     assert result == False
+
